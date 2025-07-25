@@ -33,7 +33,7 @@ const NavigationProfile: React.FC<Props> = ({ isHovered }) => {
               exit={{ opacity: 0, x: -10 }}
               transition={{ duration: 0.2, delay: 0.1 }}
             >
-              <h3 className="text-sm font-medium text-white">Daniel</h3>
+              <h3 className="text-sm font-medium text-white">Hayk</h3>
             </motion.div>
           </motion.div>
         )}
