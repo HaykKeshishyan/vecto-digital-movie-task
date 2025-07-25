@@ -25,10 +25,13 @@ const toastContents: Record<
   },
 };
 
+console.log(toastContents);
+
 const NavigationFooter: React.FC<Props> = ({ isHovered }) => {
   const { toast } = useToast();
 
   const handleClick = (key: NavigationFooterEnum) => {
+    console.log(key);
     toast(toastContents[key]);
   };
 
@@ -50,13 +53,13 @@ const NavigationFooter: React.FC<Props> = ({ isHovered }) => {
               <span className="ml-3">LANGUAGE</span>
             </button>
             <button
-              onClick={() => handleClick(NavigationFooterEnum.Language)}
+              onClick={() => handleClick(NavigationFooterEnum.GetHelp)}
               className="w-full flex items-center px-4 py-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm"
             >
               <span className="ml-3">GET HELP</span>
             </button>
             <button
-              onClick={() => handleClick(NavigationFooterEnum.Language)}
+              onClick={() => handleClick(NavigationFooterEnum.Exit)}
               className="w-full flex items-center px-4 py-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm"
             >
               <span className="ml-3">EXIT</span>
