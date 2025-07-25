@@ -25,13 +25,10 @@ const toastContents: Record<
   },
 };
 
-console.log(toastContents);
-
 const NavigationFooter: React.FC<Props> = ({ isHovered }) => {
   const { toast } = useToast();
 
   const handleClick = (key: NavigationFooterEnum) => {
-    console.log(key);
     toast(toastContents[key]);
   };
 
