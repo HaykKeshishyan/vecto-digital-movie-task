@@ -39,7 +39,7 @@ const MenuItem: React.FC<Props> = ({
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -10 }}
               transition={{ duration: 0.2 }}
-              className="ml-3"
+              className="ml-3 whitespace-nowrap"
             >
               {label}
             </motion.span>
